@@ -1,0 +1,29 @@
+/* BLOG POSTS*/
+.blog_post {
+  padding: 1em;
+  margin: 1em auto;
+  width: 70%;
+}
+
+.blog_post header {
+  border-style: solid;
+  padding: 1em;
+  font-size: 18pt;
+  font-variant: small-caps;
+}
+
+.blog_post header h1 {
+  line-height: 100%;
+}
+
+.blog_post header h2 {
+  line-height: 25%;
+  font-weight: lighter;
+}
+
+.blog_post article {
+  border-top: 0px;
+  border-style: solid;
+  padding: 0.5em 1em;
+  font-size: 12pt;
+}
