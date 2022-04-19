@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--META DATA-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS IMPORTS-->
     <link rel="stylesheet" href="/CSS Folder/normalize.css" />
     <link rel="stylesheet" href="/CSS Folder/style.css" />
+
+    <!--HAMBURGER IMPORT-->
+    <script
+      src="https://kit.fontawesome.com/45f4313405.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>|| BLOGS ||</title>
   </head>
   <body>
     <header>
       <nav>
+        <input type="checkbox" id="navBarMobile" />
+        <label for="navBarMobile" class="navBarClass"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+
         <ul>
-          <li><a href="/HTML Folder/index.html">HOME</a></li>
-          <li><a href="/HTML Folder/profile.html">PROFILE</a></li>
-          <li><a href="/HTML Folder/portfolio.html">PORTFOLIO</a></li>
-          <li><a href="/HTML Folder/blog.html">BLOGS</a></li>
-          <li><a href="/HTML Folder/designProcess.html">DESIGN PROCESS</a></li>
+          <li><a href="/HTML Folder/index.html">Home</a></li>
+          <li><a href="/HTML Folder/profile.html">Profile</a></li>
+          <li><a href="/HTML Folder/portfolio.html">Portfolio</a></li>
+          <li><a href="/HTML Folder/blog.html" class="active_tab">Blogs</a></li>
+          <li><a href="/HTML Folder/designProcess.html">Design Process</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Page Specific Content-->
-    <main>
-      <!--BLOG POST 1-->
-      <section class="blog_post">
+    <main class="background">
+      <!--BLOG POST 1: HYPERTEXT-->
+      <section class="section_post">
         <header>
-          <h1>What is HyperText?</h1>
+          <h1>What Is HyperText?</h1>
           <h2>Ricardo Costa-Tré</h2>
           <h2>14 March 2022</h2>
         </header>
         <article>
-          <h1>What is HyperText?</h1>
+          <h1>What Is HyperText?</h1>
           <p>
             In this reading, the writer explores, both conceptually and
             literally, the meaning of hypertext. Throughout the reading the
@@ -95,35 +110,149 @@
         </article>
       </section>
 
-      <!--BLOG POST 2-->
-      <section class="blog_post">
+      <!--BLOG POST 2: BROWSER-->
+      <section class="section_post">
         <header>
-          <h1>Blog Title</h1>
+          <h1>What Is A Browser</h1>
           <h2>Ricardo Costa-Tré</h2>
-          <h2>Date of Blog</h2>
+          <h2>28 March 2022</h2>
         </header>
         <article>
+          <h1>What Is A Browser</h1>
           <p>
-            This is the text of the elemtn for your mom in the para of the html
-            suck it bitch hahahaha this is funny blog your mom.
+            Simply put, a browser is a piece of software. This software is used
+            as a medium for displaying information from the web. There are many
+            different browsers, each offering slight differences and quirks, but
+            at the end of the day, they all do the same thing - display
+            information.
           </p>
-          <p>This is another paragraph hellow there.</p>
+          <p>
+            The Web Browser is responsible for taking in user input (for what
+            the user is looking for) and displaying information regarding said
+            input. The information displayed is dependent on the URL, which is a
+            unique identifier for a webpage. This URL is used as a reference to
+            know where to pull data from and what to display. Through the use of
+            web-programming languages, the browser then displays the information
+            requested by the code, loading in details such as text, images and
+            possibly other hyperlinks.
+          </p>
+          <p>
+            In the most basic and unexplained terms, it is a form of software
+            that is responsible for gathering information from other parts of
+            the web and displaying it a way such that it is consumable by the
+            user.
+          </p>
+
+          <section>
+            <p class="references">References:</p>
+            <p>
+              Mozilla Foundation. (2022). What is a web browser? Retrieved from
+              moz://a:
+              <a
+                href="https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/#:~:text=A%20web%20browser%20takes%20you%20anywhere%20on%20the%20internet.,are%20transmitted%20on%20the%20web"
+                >https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/#:~:text=A%20web%20browser%20
+                takes%20you%20anywhere%20on%20the%20
+                internet.,are%20transmitted%20on%20the%20 web</a
+              >
+            </p>
+          </section>
         </article>
       </section>
 
-      <!--BLOG POST 3-->
-      <section class="blog_post">
+      <!--BLOG POST 3: INTERACTIVITY-->
+      <section class="section_post">
         <header>
-          <h1>Blog Title</h1>
+          <h1>What Interactivity Means On The WWW</h1>
           <h2>Ricardo Costa-Tré</h2>
-          <h2>Date of Blog</h2>
+          <h2>15 April 2022</h2>
         </header>
         <article>
+          <h1>What Interactivity Means On The WWW</h1>
+          <h2>The Development of the Web</h2>
           <p>
-            This is the text of the elemtn for your mom in the para of the html
-            suck it bitch hahahaha this is funny blog your mom.
+            With Web development, from Web 1.0 to Web 2.0, interactivity became
+            a huge factor in developing, considering, and using web design. This
+            development was the first transition from static, read-only
+            websites, to a more dynamic, user-varied, read-write form of
+            providing and receiving information. However, it did not stop there.
+            Web 3.0 is the idea of having the web analyzed according to user
+            data. Content searched, links clicked, and the navigation between
+            different places on the web is used to directly affect how
+            information is provided to the user on the internet. In the rawest
+            and basic form, this can be seen on websites such as YouTube,
+            Twitch, and most social media platforms in which the SEO is used to
+            gather information (on common topics, people, etc.) which is run
+            through an algorithm that filters through content to give out
+            recommended content that the user may enjoy.
           </p>
-          <p>This is another paragraph hellow there.</p>
+          <p>
+            While it may not seem very interactable on the surface, the entire
+            search algorithm and the filtering of content are based on our
+            preferences, likes, and commonly searched topics. This itself is a
+            form of input that is reliant on the user and is not completely the
+            same for one person.
+          </p>
+          <p>
+            The development of Web 3.0, also brings along the ethical problems
+            such as gathering user information that may be considered private
+            and having it used for commercial uses. This problem has already
+            arisen multiple times in the past, as seen with many scandals from
+            Facebook regarding user information.
+          </p>
+          <h2>Why Is Interactivity Important for the WWW?</h2>
+          <p>
+            As mentioned above, the main focus of interactivity is receiving an
+            input from a user and displaying an output that is customized in a
+            way such that it is preferable for said user. With the advancements
+            in technology and how we receive, perceive, and share information
+            across the web, the amount of information found and stored on the
+            web is constantly increasing at a drastic speed. As such, one cannot
+            be expected to read and have to filter through all this information,
+            as nothing would actually be done. As such, user input is essential
+            in minimizing the need to find valid sources and information that
+            the user is interested in. This is the core principle for
+            interactivity.
+          </p>
+          <p>
+            The web is constantly evolving in such a way to make life easier for
+            the consumer by providing recommendations on the user's taste, and
+            as such websites aim to make their websites interactive, not only
+            for displaying products, but also to provide a quick and easy
+            experience for the user - an essential thing to have in a fast
+            moving environment (as people will tend to click off and find
+            another site if the current website is too jarring).
+          </p>
+          <section>
+            <p class="references">References:</p>
+            <p>
+              nexusadmin. (2022, April 15). Importance of Web Interactivity.
+              Retrieved from NEXUS Websites:
+              <a
+                href="https://www.nexuswebsites.co.uk/importance-of-web-interactivity/"
+                >https://www.nexuswebsites.co.uk/importance-of-web-interactivity/</a
+              >
+            </p>
+            <p>
+              Poonam. (2021, December 2). Importance of Web Interactivity: Tips
+              and Examples. Retrieved from HONGKIAT:
+              <a
+                href="https://www.hongkiat.com/blog/importance-of-web-interactivity-tips-and-examples/"
+                >https://www.hongkiat.com/blog/importance-of-web-interactivity-tips-and-examples/</a
+              >
+            </p>
+            <p>
+              WebFX. (2022). How to Make Website More Interactive in 13 Steps.
+              Retrieved from WebFX:
+              <a
+                href="https://www.webfx.com/web-design/learn/how-to-make-website-more-interactive/"
+                >https://www.webfx.com/web-design/learn/how-to-make-website-more-interactive/</a
+              >
+            </p>
+            <p>
+              Delia Kench, L.-A. C. (2015). Trends and Emerging Technolgies. In
+              L.-A. C. Delia Kench, explporing IT: Theory (pp. 28-29). Funworks.
+            </p>
+          </section>
         </article>
       </section>
     </main>
