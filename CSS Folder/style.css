@@ -1,3 +1,8 @@
+/* ALL */
+* {
+  font-size: 2vmin;
+}
+
 /* MAIN */
 main {
   padding: 2.5%;
@@ -24,7 +29,6 @@ footer ul li {
   border: solid 1px;
   background-color: rgba(255, 255, 255, 0.596);
   border-radius: 1pt;
-  padding: 1pt;
   font-variant: small-caps;
 }
 
@@ -88,7 +92,6 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 20px;
   color: black;
   text-decoration: none;
   font-variant: small-caps;
@@ -102,7 +105,6 @@ a.active_tab {
 }
 
 .navBarClass {
-  font-size: 30px;
   color: rgb(0, 0, 0);
   float: right;
   line-height: 50px;
@@ -145,7 +147,7 @@ a.active_tab {
   }
 
   nav ul li a {
-    font-size: 25px;
+    font-size: 3vmin;
   }
 
   #navBarMobile:checked ~ ul {
@@ -169,6 +171,10 @@ a.active_tab {
   border-radius: 10%;
   padding: 15pt;
   border-style: solid;
+}
+
+.home article p {
+  font-size: 3vmin;
 }
 
 /* BACKGROUNDS */
