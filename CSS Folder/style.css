@@ -5,11 +5,27 @@ main {
 
 /* FOOTER */
 footer {
+  bottom: 0;
+  width: 100%;
+  height: 100px;
   border-style: solid;
   border-width: 2pt;
   border-color: rgb(0, 0, 0);
   background-image: url(/Art\ Folder/Bar.jpg);
-  min-height: 140px;
+}
+
+footer ul {
+  float: left;
+  margin-left: 10px;
+  list-style: none;
+}
+
+footer ul li {
+  border: solid 1px;
+  background-color: rgba(255, 255, 255, 0.596);
+  border-radius: 1pt;
+  padding: 1pt;
+  font-variant: small-caps;
 }
 
 /* INFORMATION BLOCKS*/
@@ -139,7 +155,7 @@ a.active_tab {
 
 /* HOME PAGE */
 .home {
-  height: 100vh;
+  height: 70vh;
   text-align: center;
   display: flex;
   align-items: center;
@@ -161,7 +177,8 @@ a.active_tab {
   border-width: 2pt;
   border-color: rgb(0, 0, 0);
   background-image: url(/Art\ Folder/Backer1.jpg);
-  background-size: 25vw 25vh;
+  background-size: 480px 270px;
+  min-height: 70vh;
 }
 
 .background_home {
@@ -169,5 +186,15 @@ a.active_tab {
   border-width: 2pt;
   border-color: rgb(0, 0, 0);
   background-image: url(/Art\ Folder/Home.jpg);
-  background-size: 25vw 25vh;
+  background-size: 480px 270px;
+  min-height: 70vh;
+}
+
+/* IMAGES */
+.image_line img {
+  float: auto;
+  width: 30%;
+  height: 30%;
+  margin: 5px;
+  border: solid 2px;
 }
