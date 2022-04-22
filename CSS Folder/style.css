@@ -38,7 +38,7 @@ footer ul li {
 .section_post header {
   border-style: solid;
   padding: 1em;
-  font-size: 18pt;
+  font-size: 3vmin;
   font-variant: small-caps;
   background-color: white;
 }
@@ -56,7 +56,7 @@ footer ul li {
   border-top: 0px;
   border-style: solid;
   padding: 0.5em 1em;
-  font-size: 12pt;
+  font-size: 2vmin;
 
   background-color: white;
 }
@@ -165,7 +165,7 @@ a.active_tab {
   width: 50%;
   background-color: rgba(255, 255, 255, 0.925);
   margin: auto;
-  font-size: 25pt;
+  font-size: 4vmin;
   border-radius: 10%;
   padding: 15pt;
   border-style: solid;
