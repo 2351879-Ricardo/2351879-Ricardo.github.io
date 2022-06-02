@@ -18,7 +18,7 @@
   /* Borders */
   border: solid 1pt;
 
-  /* Debug */
+  /* Background */
   background-color: red;
 }
 
@@ -72,16 +72,37 @@ nav ul li {
 
   /* Borders */
   border: solid 1pt;
-
-  /* Debug */
-  background-color: pink;
 }
 
-nav ul li a {
+nav ul li button {
+  /* Button Sizing */
+  height: 100%;
+  width: 100%;
+
+  /* Borders */
+  border: none;
+
+  /* Styling */
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+}
+
+nav ul li button:hover {
+  /* Background */
+  background-color: #ccc;
+
+  /* Cursor */
+  cursor: pointer;
+}
+
+nav ul li button p {
   /* Text Styling */
+  font-variant: small-caps;
+  text-transform: none;
   writing-mode: vertical-rl;
-  text-decoration: none;
-  font-size: 1.25rem;
+  overflow-wrap: break-word;
+  font-size: 1.1rem;
 }
 
 /* ========================== */
@@ -92,7 +113,7 @@ nav ul li a {
   padding: 0.25rem 2rem;
   overflow-wrap: break-word;
 
-  /* Debug */
+  /* Background */
   background-color: yellow;
 }
 
@@ -108,16 +129,18 @@ nav ul li a {
   margin: 0;
 }
 
+.section-post header h2 {
+  /* Margins */
+  margin: 0;
+}
+
 .section-post header button {
   /* Sizing */
-  height: 100%;
+  height: fit-content;
   width: 100%;
 
   /* Borders */
   border: none;
-
-  /* Padding */
-  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .section-post article {
@@ -127,6 +150,11 @@ nav ul li a {
 
   /* Padding */
   padding: 0rem 1rem;
+}
+
+.section-post article ul {
+  /* Padding */
+  padding-left: 2%;
 }
 
 .section-post article h2 {
@@ -143,12 +171,14 @@ nav ul li a {
 /* COLLAPSE BUTTON FORMATTING */
 /* ========================== */
 .collapse {
+  /* Styling */
   background-color: #eee;
   color: #444;
   cursor: pointer;
 }
 .active,
 .collapse:hover {
+  /* Background */
   background-color: #ccc;
 }
 
@@ -159,4 +189,23 @@ nav ul li a {
   background-color: #f1f1f1;
 
   transition: opacity 0.5s ease-out;
+}
+
+/* ================ */
+/* IMAGE FORMATTING */
+/* ================ */
+.images {
+  width: inherit;
+  height: fit-content;
+  text-align: center;
+}
+
+img {
+  border: solid 3pt;
+  padding: 2rem;
+}
+
+figure {
+  margin: 2.5rem;
+  font-style: italic;
 }
