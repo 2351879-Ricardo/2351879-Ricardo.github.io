@@ -14,14 +14,23 @@
     <script src="../../JAVASCRIPT/import_templates.js"></script>
 
     <!--PAGE TITLE-->
-    <title>|| BLOGS ||</title>
+    <title>|| HOME ||</title>
   </head>
 
   <body>
     <main class="grid-body">
       <!--CONTENT BODY-->
       <section class="content-body">
-        <section id="blog-container"></section>
+        <article>
+          <h1>
+            Hi! <br />
+            I am Ricardo Costa-Tré
+          </h1>
+          <p>
+            I am an aspiring game design student currently studying at the
+            University of the Witwatersrand.
+          </p>
+        </article>
       </section>
 
       <!--NAV BAR-->
@@ -30,22 +39,6 @@
   </body>
 
   <script>
-    // Import Nav Bar
     ImportNavBar();
-
-    // Import Blogs
-    let blogs = [
-      "../Blogs/blog1.html",
-      "../Blogs/blog2.html",
-      "../Blogs/blog3.html",
-      "../Blogs/blog4.html",
-      "../Blogs/blog5.html",
-      "../Blogs/blog6.html",
-    ];
-
-    for (let i = 0; i < blogs.length; i++) {
-      ImportBlog(blogs[i]);
-    }
   </script>
-  <script src="../../JAVASCRIPT/collapse.js"></script>
 </html>
