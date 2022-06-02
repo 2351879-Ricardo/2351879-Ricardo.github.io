@@ -227,3 +227,10 @@ figure {
   margin: 2.5rem;
   font-style: italic;
 }
+
+/* ================ */
+/* IMAGE FORMATTING */
+/* ================ */
+.home-page {
+  font-size: 1.8rem;
+}

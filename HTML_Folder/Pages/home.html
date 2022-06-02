@@ -21,24 +21,24 @@
     <main class="grid-body">
       <!--CONTENT BODY-->
       <section class="content-body">
-        <article>
-          <h1>
-            Hi! <br />
-            I am Ricardo Costa-Tré
-          </h1>
-          <p>
-            I am an aspiring game design student currently studying at the
-            University of the Witwatersrand.
-          </p>
-        </article>
+        <section id="blog-container"></section>
       </section>
 
       <!--NAV BAR-->
       <aside id="nav-bar"></aside>
     </main>
-
-    <script>
-      ImportNavBar("#home");
-    </script>
   </body>
+
+  <script>
+    // Import Nav Bar
+    ImportNavBar("#home");
+
+    // Import Blogs
+    let blogs = ["../Home/me.html"];
+
+    for (let i = 0; i < blogs.length; i++) {
+      ImportBlog(blogs[i]);
+    }
+  </script>
+  <script src="../../JAVASCRIPT/collapse.js"></script>
 </html>
