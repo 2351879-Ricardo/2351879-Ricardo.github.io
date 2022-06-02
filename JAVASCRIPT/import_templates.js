@@ -9,7 +9,7 @@ function ImportNavBar(){
             }
         }
 
-    xhttp.open("GET", "HTML_Folder/Templates/navbar.html", true);
+    xhttp.open("GET", "/HTML_Folder/Templates/navbar.html", true);
     xhttp.send();
 
     return;
