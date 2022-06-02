@@ -38,6 +38,11 @@
 /* NAVIGATION BAR FORMATTING */
 /* ========================= */
 
+.nav-bar {
+  /* Padding */
+  padding: 0;
+}
+
 nav {
   /* Element Sizing */
   height: inherit;
@@ -99,6 +104,7 @@ nav ul li a {
 }
 
 .section-post header h1 {
+  /* Margins */
   margin: 0;
 }
 
@@ -115,11 +121,12 @@ nav ul li a {
 }
 
 .section-post article {
-  /* Debug */
+  /* Borders */
   border: solid 1.5pt;
   border-top: solid 0.5pt;
+
+  /* Padding */
   padding: 0rem 1rem;
-  transition: all 1s;
 }
 
 .section-post article h2 {
@@ -128,6 +135,7 @@ nav ul li a {
 }
 
 .references ul {
+  /* Padding */
   padding-left: 2%;
 }
 
@@ -150,5 +158,5 @@ nav ul li a {
   overflow: hidden;
   background-color: #f1f1f1;
 
-  transition: opacity 1s ease-out;
+  transition: opacity 0.5s ease-out;
 }
