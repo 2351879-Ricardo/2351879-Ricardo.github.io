@@ -82,6 +82,10 @@ nav ul li button {
   /* Borders */
   border: none;
 
+  /* Margins and Padding */
+  margin: 0;
+  padding: 0;
+
   /* Styling */
   background-color: #eee;
   color: #444;
@@ -97,12 +101,25 @@ nav ul li button:hover {
 }
 
 nav ul li button p {
+  /* Sizing */
+  height: inherit;
+  width: inherit;
+
+  /* Padding and Margins */
+  padding: 0;
+  margin: 0;
+
   /* Text Styling */
   font-variant: small-caps;
   text-transform: none;
   writing-mode: vertical-rl;
   overflow-wrap: break-word;
   font-size: 1.1rem;
+
+  /* Text Positioning*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ========================== */
