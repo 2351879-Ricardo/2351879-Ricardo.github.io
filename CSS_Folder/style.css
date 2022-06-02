@@ -10,7 +10,7 @@
 
 .content-body {
   /* Page Sizing */
-  min-height: 99.7vh;
+  min-height: 96.3vh;
 
   /* Padding */
   padding: 1rem 2rem;
@@ -19,7 +19,9 @@
   border: solid 1pt;
 
   /* Background */
-  background-color: red;
+  background-image: url(../Art_Folder/Backer1.jpg);
+  background-repeat: repeat;
+  background-size: 25% 25%;
 }
 
 .nav-body {
@@ -87,7 +89,7 @@ nav ul li button {
   padding: 0;
 
   /* Styling */
-  background-color: #eee;
+  background-image: url(../Art_Folder/BarLight.jpg);
   color: #444;
   cursor: pointer;
 }
@@ -120,6 +122,8 @@ nav ul li button p {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-color: rgba(227, 240, 52, 0.852);
 }
 
 /* ========================== */
@@ -129,9 +133,6 @@ nav ul li button p {
   /* Paddings and Margins */
   padding: 0.25rem 2rem;
   overflow-wrap: break-word;
-
-  /* Background */
-  background-color: yellow;
 }
 
 .section-post header {

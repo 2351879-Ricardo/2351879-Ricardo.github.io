@@ -24,9 +24,9 @@ function HighlightCurrent(id)
     let elemStyle = document.getElementById(id).style;
     elemStyle.textTransform = "uppercase";
     elemStyle.fontVariant = "normal";
-    elemStyle.fontWeight = "bold";
+    elemStyle.color = "white";
+    elemStyle.backgroundColor = "rgba(28, 15, 203, 0.70)";
 
-    document.getElementById(id).parentElement.style.backgroundColor = "green"
 }
 
 function ImportBlog(blog)
