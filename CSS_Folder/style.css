@@ -1,0 +1,154 @@
+/* ======================= */
+/* WEBSITE BODY FORMATTING */
+/* ======================= */
+
+.grid-body {
+  /* Grid Formatting */
+  display: grid;
+  grid-template-columns: 95vw 5vw;
+}
+
+.content-body {
+  /* Page Sizing */
+  min-height: 99.7vh;
+
+  /* Padding */
+  padding: 1rem 2rem;
+
+  /* Borders */
+  border: solid 1pt;
+
+  /* Debug */
+  background-color: red;
+}
+
+.nav-body {
+  /* Positioning */
+  position: fixed;
+
+  /* Page Sizing */
+  width: 5vw;
+  height: 99.7vh;
+
+  /* Borders */
+  border: solid 1pt;
+}
+
+/* ========================= */
+/* NAVIGATION BAR FORMATTING */
+/* ========================= */
+
+nav {
+  /* Element Sizing */
+  height: inherit;
+}
+
+nav ul {
+  /* Page Sizing */
+  height: inherit;
+
+  /* Page Layout */
+  margin: 0;
+  padding: 0;
+
+  /* Grid Formatting */
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+nav ul li {
+  /* Text Positioning*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* List Styling */
+  list-style: none;
+
+  /* Borders */
+  border: solid 1pt;
+
+  /* Debug */
+  background-color: pink;
+}
+
+nav ul li a {
+  /* Text Styling */
+  writing-mode: vertical-rl;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+/* ========================== */
+/* SECTION POSTING FORMATTING */
+/* ========================== */
+.section-post {
+  /* Paddings and Margins */
+  padding: 0.25rem 2rem;
+  overflow-wrap: break-word;
+
+  /* Debug */
+  background-color: yellow;
+}
+
+.section-post header {
+  /* Borders */
+  border: solid 2.5pt;
+
+  /* Debug */
+}
+
+.section-post header h1 {
+  margin: 0;
+}
+
+.section-post header button {
+  /* Sizing */
+  height: 100%;
+  width: 100%;
+
+  /* Borders */
+  border: none;
+
+  /* Padding */
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.section-post article {
+  /* Debug */
+  border: solid 1.5pt;
+  border-top: solid 0.5pt;
+  padding: 0rem 1rem;
+  transition: all 1s;
+}
+
+.section-post article h2 {
+  /* Text Styling */
+  text-decoration: underline;
+}
+
+.references ul {
+  padding-left: 2%;
+}
+
+/* ========================== */
+/* COLLAPSE BUTTON FORMATTING */
+/* ========================== */
+.collapse {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+}
+.active,
+.collapse:hover {
+  background-color: #ccc;
+}
+
+.collapse-content {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+
+  transition: opacity 1s ease-out;
+}
