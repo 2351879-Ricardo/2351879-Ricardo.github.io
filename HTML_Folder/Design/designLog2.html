@@ -4,10 +4,244 @@
       <h1>The Change</h1>
       <address>Ricardo Costa-Tré</address>
       <time pubdate datetime="2022-06-10" title="June 10th, 2022">
-        23 April 2022 - 10 May 2022
+        23 April 2022 - 10 June 2022
       </time>
     </button>
   </header>
 
-  <article class="collapse-content"></article>
+  <article class="collapse-content">
+    <section class="section-post">
+      <header>
+        <button class="collapse" onclick="ToggleCollapseView(this)">
+          <h2>Navigation Bar</h2>
+        </button>
+      </header>
+
+      <article class="collapse-content">
+        <p>
+          While my original navigation bar wasn’t terrible, there were obvious
+          problems with it. As mentioned in my blog ‘Analysis of my UI & UX’,
+          important factors such as the ‘Norman Door’, general conventions, as
+          well as Fitts’ law were not taken into account. As such, development
+          on revamping the navigation bar started with research regarding these
+          topics.
+        </p>
+        <p>
+          Starting with convention, the obvious choice was to change the links
+          between pages from a linkable text (‘a’ tag) to that of a button. This
+          would not allow for it to stick with convention but would also allow
+          the user to navigate without having to click specifically on the text.
+          Buttons were then linked with code using JavaScript, which took
+          relative path information to the link between pages.
+        </p>
+        <p>
+          The navigation bar was also given a fixed position to compensate for
+          when information areas (such as blogs) are expanded and require the
+          page to be scrolled through to see all information. Through this
+          usage, the navigation bar will remain consistent throughout the page,
+          limiting distortion and unwanted effects. A notable problem currently
+          found is that the text in the navigation bar seems to not be centered
+          when the scrollbar appears. This is due to the scrollbar covering some
+          parts of the navigation bar and will require work in the active
+          future.
+        </p>
+        <p>
+          Another core change was the view style of the navigation bar.
+          Previously, the bar navigation bar could be found at the top of the
+          page, followed by an expandable menu when the browser was resized
+          smaller. During the resizing process, some unwanted effects would
+          appear with the navigation bar regarding styling and start creating
+          viewing problems. As such, the choice to create a permanent sidebar
+          was opted for as it would allow for easier resizing through the use of
+          grids and created easier and more predictable outcomes when resizing.
+        </p>
+        <p>
+          JavaScript was also used, alongside an HTML template for the
+          navigation bar, which imports the navigation bar onto the active
+          webpage when required. Reasonings for this are discussed in the
+          ‘JavaScript Injections for HTML Templates’ section.
+        </p>
+      </article>
+    </section>
+
+    <section class="section-post">
+      <header>
+        <button class="collapse" onclick="ToggleCollapseView(this)">
+          <h2>Information Blocks</h2>
+        </button>
+      </header>
+
+      <article class="collapse-content">
+        <p>
+          Originally created to store the blogs, information blocks now serve as
+          the primary way of populating information on the webpage.
+        </p>
+        <p>
+          Information blocks consist of a header section in which a title and
+          any other relevant information are displayed for the information to
+          follow. The second part of the information block serves as the body
+          and contains the information relevant to the title aforementioned
+        </p>
+        <p>
+          Collapsible functionality was built into information blocks to
+          compensate for the minimalistic, clean feel of the website. It also
+          serves as a way for users to view information as they please, and
+          allows for easier navigation among multiple information blocks on a
+          single page. Throughout his process, the user can choose which
+          information can be displayed by them, while still allowing them to
+          collapse said information and navigate the rest of the page without it
+          feeling cluttered. This is aimed to allow the user to navigate through
+          the page with greater ease.
+        </p>
+        <p>
+          The collapsible feature has been in consideration since the early
+          stages of the website but proved even more necessary after the first
+          version of the website, in which webpages contained lots of
+          information and gave the user difficulties when trying to navigate
+          through it as well as when trying to locater specific information.
+        </p>
+        <p>
+          The current structure of the information blocks has been chosen as it
+          (aims to) provides the user with more manageable chunks of
+          information, and easier navigation as well as give a clean and
+          minimalistic functionality and feel for the component.
+        </p>
+      </article>
+    </section>
+
+    <section class="section-post">
+      <header>
+        <button class="collapse" onclick="ToggleCollapseView(this)">
+          <h2>JavaScript Injections for HTML Templates</h2>
+        </button>
+      </header>
+
+      <article class="collapse-content">
+        <p>
+          Extensive use of JavaScript code was used to allow for JavaScript
+          injections of HTML templates into the desired webpages. This design
+          choice was mainly implemented for two specific reasons, that being
+          modularity as well as keeping code clean. The use of the JavaScript
+          injection allows for conceptually repeated code to be easily
+          implemented on new pages and HTML files with relative ease (just by
+          using an ID), preventing code from becoming cluttered and keeping code
+          sectioned off appropriately to improve readability.
+        </p>
+        <p>
+          The system is currently in use for populating pages with information
+          in their respective information blocks as well as the navigation bar.
+          While this method has proved extremely useful and convenient, there is
+          currently an underlying bug that can confuse. Currently, when
+          navigating to a page, there is a chance that the information blocks
+          are not rendered in the correct order. Reasons for this are still
+          currently unknown and will require further research, troubleshooting,
+          and debugging.
+        </p>
+      </article>
+    </section>
+
+    <section class="section-post">
+      <header>
+        <button class="collapse" onclick="ToggleCollapseView(this)">
+          <h2>UI & UX Design</h2>
+        </button>
+      </header>
+
+      <article class="collapse-content">
+        <p>
+          Greater focus was spent on enhancing the user experience while on the
+          website. These are accounted for in the previously aforementioned
+          information blocks and navigation bar.
+        </p>
+        <p>
+          Another core focus was on interactivity regarding the website,
+          providing users with the appropriate information needed for navigating
+          the site, as well as giving the user a more pleasant and easier to
+          understand the experience. This can be seen in effect in the
+          information blocks as well as the navigation bar.
+        </p>
+        <p>
+          Regarding the information blocks, users are provided information when
+          hovering over the header section of the information block. This
+          consists of the changing of both the color of the header as well the
+          appearance of the cursor. The purpose of this is to inform the user
+          that this is interactable and will result in the expansion and
+          collapsing of the information block. In practice, I am not sure if
+          this is made entirely apparent and as such, I await feedback regarding
+          this. If this is not sufficient, development has already begun a
+          background art for the headers, in which text saying “Click Me!” will
+          be visible, providing a more direct approach to expressing how the
+          element works to the user.
+        </p>
+        <p>
+          Regarding the navigation bar, the effort was expended to create more
+          obvious feedback to the user as to which page they currently are
+          viewing. This was implemented as feedback from a user who stated that
+          even though the bolding and text change to indicate the current page
+          was useful, it wasn’t always apparent and the user would often forget
+          which page they were on. As such, the use of complementary color
+          change was implemented to create a stark contrast to tabs on the
+          navigation bar, proving to be a lot better to comprehend.
+        </p>
+        <p>
+          A current worry I currently have is that of the layout of the
+          information blocks that only contain a title (and don’t contain extra
+          information as seen in the blogs), as I am not sure if the spacing
+          between the elements as well as the sizing is appropriate with Fitts’
+          Law. Changes to these variants in information blocks will be reliant
+          on feedback received from users.
+        </p>
+      </article>
+    </section>
+
+    <section class="section-post">
+      <header>
+        <button class="collapse" onclick="ToggleCollapseView(this)">
+          <h2>General Coding Practices</h2>
+        </button>
+      </header>
+
+      <article class="collapse-content">
+        <p>
+          As mentioned previously, slight unwanted behavior occurred during
+          changes in the browser’s sizing and compatibility with other devices.
+          While this was a factor of many poor design choices, it was also a
+          result of inconsistent styling in the CSS code. This inconsistent
+          styling as a result of trying to use both relative and exact sizing
+          measurements synonymously, which caused said unwanted behavior when
+          sizing. As such, the entire CSS styling code was rewritten to allow
+          for easier and cleaner behavior when resizing, as well as keeping
+          convention consistent as per better programming practices.
+        </p>
+        <p>
+          Uses of comments can be found through the majority of code scripts in
+          which a lot of information would reside. This allows for easier
+          readability which will allow for easier expansion in the future as
+          well as the ability to be able to see which parts of code are
+          responsible for their implementation. This also proved extremely
+          useful with the combination of templates. It also allowed for
+          JavaScript injections to be implemented with ease due to the
+          reformatting.
+        </p>
+        <p>
+          Other inconsistencies, such as the varying types of naming classes,
+          elements, ids, etc, were also changed to create a consistent and
+          easier system to work with. This was done by keeping naming
+          conventions consistent. With regards to the current naming system,
+          there is active consideration for the process of varying naming
+          conventions according to their properties, as only one naming system
+          is currently in effect and may cause confusion when working with
+          varying properties of elements. Examples of these include variations
+          in the naming conventions for element class versus element ids.
+        </p>
+        <p>
+          More time was also spent focusing on the semantic development of the
+          website. While there are currently no microformats (although these are
+          planned for the foreseeable future), the use of more specific tags
+          such as 'figure' and 'figcaption' have been implemented to compensate
+          for web crawlers and the SEOs.
+        </p>
+      </article>
+    </section>
+  </article>
 </section>
