@@ -29,21 +29,10 @@
     </main>
   </body>
 
-  <script>
-    // Import Nav Bar
-    ImportNavBar("#profile");
-
-    // Import Blogs
-    let blogs = [
-      "../CV/personalInfo.html",
-      "../CV/education.html",
-      "../CV/skills.html",
-      "../CV/other.html",
-    ];
-
-    for (let i = 0; i < blogs.length; i++) {
-      ImportBlog(blogs[i]);
-    }
-  </script>
+  <!--SCRIPTS POST-->
+  <script
+    src="../../JAVASCRIPT/import_info.js"
+    onload="ImportAll('#profile')"
+  ></script>
   <script src="../../JAVASCRIPT/collapse.js"></script>
 </html>

@@ -29,23 +29,10 @@
     </main>
   </body>
 
-  <script>
-    // Import Nav Bar
-    ImportNavBar("#blogs");
-
-    // Import Blogs
-    let blogs = [
-      "../Blogs/blog1.html",
-      "../Blogs/blog2.html",
-      "../Blogs/blog3.html",
-      "../Blogs/blog4.html",
-      "../Blogs/blog5.html",
-      "../Blogs/blog6.html",
-    ];
-
-    for (let i = 0; i < blogs.length; i++) {
-      ImportBlog(blogs[i]);
-    }
-  </script>
+  <!--SCRIPTS POST-->
+  <script
+    src="../../JAVASCRIPT/import_info.js"
+    onload="ImportAll('#blogs')"
+  ></script>
   <script src="../../JAVASCRIPT/collapse.js"></script>
 </html>

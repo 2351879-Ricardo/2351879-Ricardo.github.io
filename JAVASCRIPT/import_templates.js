@@ -1,4 +1,5 @@
-function ImportNavBar(id){
+function ImportNavBar(id)
+{
     let xhttp = new XMLHttpRequest();
 
     xhttp.onreadystatechange = function()
