@@ -12,7 +12,7 @@ function ImportNavBar(id)
                     HighlightCurrent(id);
                 }
             }
-        }
+        };
 
     xhttp.open("GET", "../Templates/navbar.html", true);
     xhttp.send();
