@@ -1,3 +1,10 @@
+/* ====================== */
+/* ALL WEBSITE FORMATTING */
+/* ====================== */
+html{
+  font-size: 1.25rem;
+}
+
 /* ======================= */
 /* WEBSITE BODY FORMATTING */
 /* ======================= */
@@ -116,7 +123,7 @@ nav ul li button p {
   text-transform: none;
   writing-mode: vertical-rl;
   overflow-wrap: break-word;
-  font-size: 1.1rem;
+  font-size: 1.1em;
 
   /* Text Positioning*/
   display: flex;
@@ -235,7 +242,7 @@ figure {
 /* IMAGE FORMATTING */
 /* ================ */
 .home-page {
-  font-size: 1.8rem;
+  font-size: 1.8em;
 }
 
 /* ================ */
