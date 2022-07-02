@@ -1,0 +1,239 @@
+/* ======================= */
+/* WEBSITE BODY FORMATTING */
+/* ======================= */
+
+.grid-body {
+  /* Grid Formatting */
+  display: grid;
+  grid-template-columns: 95vw 5vw;
+}
+
+.content-body {
+  /* Page Sizing */
+  min-height: 96.3vh;
+
+  /* Padding */
+  padding: 1rem 2rem;
+
+  /* Borders */
+  border: solid 1pt;
+
+  /* Background */
+  background-image: url(../Art_Folder/Backer1.jpg);
+  background-repeat: repeat;
+  background-size: 25% 25%;
+}
+
+.nav-body {
+  /* Positioning */
+  position: fixed;
+
+  /* Page Sizing */
+  width: 5vw;
+  height: 99.7vh;
+
+  /* Borders */
+  border: solid 1pt;
+}
+
+/* ========================= */
+/* NAVIGATION BAR FORMATTING */
+/* ========================= */
+
+.nav-bar {
+  /* Padding */
+  padding: 0;
+}
+
+nav {
+  /* Element Sizing */
+  height: inherit;
+}
+
+nav ul {
+  /* Page Sizing */
+  height: inherit;
+
+  /* Page Layout */
+  margin: 0;
+  padding: 0;
+
+  /* Grid Formatting */
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+nav ul li {
+  /* Text Positioning*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* List Styling */
+  list-style: none;
+
+  /* Borders */
+  border: solid 1pt;
+}
+
+nav ul li button {
+  /* Button Sizing */
+  height: 100%;
+  width: 100%;
+
+  /* Borders */
+  border: none;
+
+  /* Margins and Padding */
+  margin: 0;
+  padding: 0;
+
+  /* Styling */
+  background-image: url(../Art_Folder/BarLight.jpg);
+  color: #444;
+  cursor: pointer;
+}
+
+nav ul li button:hover {
+  /* Background */
+  background-color: #ccc;
+
+  /* Cursor */
+  cursor: pointer;
+}
+
+nav ul li button p {
+  /* Sizing */
+  height: inherit;
+  width: inherit;
+
+  /* Padding and Margins */
+  padding: 0;
+  margin: 0;
+
+  /* Text Styling */
+  font-variant: small-caps;
+  text-transform: none;
+  writing-mode: vertical-rl;
+  overflow-wrap: break-word;
+  font-size: 1.1rem;
+
+  /* Text Positioning*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(227, 240, 52, 0.852);
+}
+
+/* ========================== */
+/* SECTION POSTING FORMATTING */
+/* ========================== */
+.section-post {
+  /* Paddings and Margins */
+  padding: 0.25rem 2rem;
+  overflow-wrap: break-word;
+}
+
+.section-post header {
+  /* Borders */
+  border: solid 2.5pt;
+
+  /* Debug */
+}
+
+.section-post header h1 {
+  /* Margins */
+  margin: 0;
+}
+
+.section-post header h2 {
+  /* Margins */
+  margin: 0;
+}
+
+.section-post header button {
+  /* Sizing */
+  height: fit-content;
+  width: 100%;
+
+  /* Borders */
+  border: none;
+}
+
+.section-post article {
+  /* Borders */
+  border: solid 1.5pt;
+  border-top: solid 0.5pt;
+
+  /* Padding */
+  padding: 0rem 1rem;
+}
+
+.section-post article ul {
+  /* Padding */
+  padding-left: 2%;
+}
+
+.section-post article h2 {
+  /* Text Styling */
+  text-decoration: underline;
+}
+
+.references ul {
+  /* Padding */
+  padding-left: 2%;
+}
+
+/* ========================== */
+/* COLLAPSE BUTTON FORMATTING */
+/* ========================== */
+.collapse {
+  /* Styling */
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+}
+.active,
+.collapse:hover {
+  /* Background */
+  background-color: #ccc;
+}
+
+.collapse-content {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+
+  transition: opacity 0.5s ease-out;
+}
+
+/* ================ */
+/* IMAGE FORMATTING */
+/* ================ */
+.images {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+img {
+  width: 90%;
+  border: solid 3pt;
+  padding: 2rem;
+}
+
+figure {
+  text-align: center;
+  width: 90%;
+  margin: 2.5rem;
+  font-style: italic;
+}
+
+/* ================ */
+/* IMAGE FORMATTING */
+/* ================ */
+.home-page {
+  font-size: 1.8rem;
+}
