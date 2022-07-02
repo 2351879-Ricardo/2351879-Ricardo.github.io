@@ -237,3 +237,16 @@ figure {
 .home-page {
   font-size: 1.8rem;
 }
+
+/* ================ */
+/* GAMES FORMATTING */
+/* ================ */
+iframe{
+  height: 50vh;
+  width: 50vw;
+  border: 0px #000000 none"
+}
+
+#holder{
+  text-align: center;
+}
